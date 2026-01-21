@@ -1,0 +1,80 @@
+---
+/* src/components/Navbar.astro */
+---
+<nav class="navbar">
+  <div class="container nav-content">
+    <a href="/" class="logo">
+      <img src="/images/brand/playfitjr_logo.svg" alt="PlayFT Jr." />
+    </a>
+    
+    <div class="nav-links">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#programmes">Programmes</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="tel:+919910128756" class="btn-primary-sm">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    background: linear-gradient(to bottom, var(--color-bg), transparent);
+    backdrop-filter: blur(8px);
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 48px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--color-primary);
+  }
+
+  .btn-primary-sm {
+    background: var(--color-primary);
+    color: #000 !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: 0.8rem !important;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  }
+</style>

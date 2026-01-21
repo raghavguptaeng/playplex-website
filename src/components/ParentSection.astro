@@ -1,0 +1,120 @@
+---
+/* src/components/ParentSection.astro */
+---
+<section class="parent-section">
+  <div class="container bg-glass parent-box">
+    <div class="parent-content">
+      <h2>A Thought for <span class="text-accent">Every Parent</span></h2>
+      <p class="intro">Are you facing any of these as a parent?</p>
+      
+      <div class="parent-grid">
+        <div class="pain-point">
+          <span class="cross">✕</span>
+          <p>Child prefers screens over outdoor play?</p>
+        </div>
+        <div class="pain-point">
+          <span class="cross">✕</span>
+          <p>Gets tired easily and avoids activity?</p>
+        </div>
+        <div class="pain-point">
+          <span class="cross">✕</span>
+          <p>Feels shy in group settings?</p>
+        </div>
+        <div class="pain-point">
+          <span class="cross">✕</span>
+          <p>Has energy, but no structured outlet?</p>
+        </div>
+      </div>
+      
+      <div class="solution-card">
+        <p>If even one of these sounds familiar, you're not alone. And that's exactly why <strong>PlayFT Jr.</strong> was created.</p>
+        <a href="tel:+919910128756" class="btn-primary">Let's Discuss Your Child's Growth</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .parent-section {
+    padding: 6rem 0;
+  }
+
+  .parent-box {
+    padding: 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .parent-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .intro {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: 4rem;
+  }
+
+  .parent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    text-align: left;
+    margin-bottom: 5rem;
+  }
+
+  .pain-point {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .cross {
+    color: #ef4444;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .pain-point p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .solution-card {
+    background: rgba(247, 134, 61, 0.05); /* Brand Orange at 5% opacity */
+    padding: 3rem;
+    border-radius: var(--radius-md);
+    border: 1px dashed var(--color-primary);
+  }
+
+  .solution-card p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .parent-box {
+      padding: 3rem 1.5rem;
+    }
+    .parent-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .pain-point {
+      padding: 1rem 0;
+    }
+  }
+</style>
