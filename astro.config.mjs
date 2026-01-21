@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://raghavguptaeng.github.io',
-    base: '/playplex-website/',
+    site: 'https://playftjr.in',
+    base: '/',
 });
